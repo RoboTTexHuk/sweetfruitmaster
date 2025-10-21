@@ -1217,10 +1217,7 @@ class _FruitHarborState extends State<FruitHarbor> with WidgetsBindingObserver {
                                   args[0]['savedata'].toString() == "false";
                               if (saved && !_handledServerResponse) {
                                 _handledServerResponse = true;
-                                WidgetsBinding.instance.addPostFrameCallback((_) {
-                                  if (!mounted) return;
 
-                                });
                               }
                             } catch (_) {}
                             if (args.isEmpty) return null;
